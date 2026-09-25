@@ -18,7 +18,8 @@ import aiohttp
 from pathlib import Path
 from dotenv import load_dotenv
 
-load_dotenv()
+from pathlib import Path
+load_dotenv(dotenv_path=Path(__file__).parent / '.env') 
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
